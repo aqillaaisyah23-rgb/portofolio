@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portofolio – Aqilla Nur Aisyah Widodo</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;800&family=Public+Sans:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#E2EFF6;--surface:#fff;--ink:#12324a;--muted:#4a6a82;--line:#B7D7EA;--a:#2b78ad;--b:#64A4CE;--c:#8DBEDC;--aink:#fff;--tag:#cfe4f1;--hero:linear-gradient(135deg,#E2EFF6 0%,#B7D7EA 100%);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f2231;--surface:#16303f;--ink:#e8f3fa;--muted:#9dbcd1;--line:#25465f;--a:#8DBEDC;--b:#64A4CE;--c:#4893C6;--aink:#0f2231;--tag:#1e405a;--hero:linear-gradient(135deg,#12293b 0%,#1b4560 100%)}}
+:root[data-theme="dark"]{--bg:#0f2231;--surface:#16303f;--ink:#e8f3fa;--muted:#9dbcd1;--line:#25465f;--a:#8DBEDC;--b:#64A4CE;--c:#4893C6;--aink:#0f2231;--tag:#1e405a;--hero:linear-gradient(135deg,#12293b 0%,#1b4560 100%)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.65 "Public Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.15;margin:0}
+a{color:var(--a)}
+:focus-visible{outline:3px solid var(--a);outline-offset:2px}
+nav{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);overflow-x:auto}
+nav ul{display:flex;gap:6px;list-style:none;margin:0 auto;padding:10px 16px;max-width:1040px;white-space:nowrap}
+nav a{display:block;padding:6px 14px;border-radius:999px;text-decoration:none;color:var(--muted);font-weight:500}
+nav a:hover{background:var(--tag);color:var(--a)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+.hero{background:var(--hero);border-bottom:1px solid var(--line);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center;padding-top:64px;padding-bottom:64px}
+.hello{display:inline-block;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:4px 14px;font-size:.92rem;color:var(--muted);margin-bottom:18px}
+.hero h1{font-size:clamp(2.4rem,6.5vw,4.4rem);font-weight:800}
+.hero h1 em{font-style:normal;background:linear-gradient(90deg,var(--a),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.lead{font-size:1.15rem;color:var(--muted);max-width:50ch;margin:18px 0 26px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:10px;border:1.5px solid var(--a);text-decoration:none;font-weight:600;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.p{background:var(--a);color:var(--aink)}
+.stats{display:flex;gap:28px;margin-top:34px;flex-wrap:wrap}
+.stats b{display:block;font:800 1.9rem Fraunces,serif;color:var(--a)}
+.stats span{color:var(--muted);font-size:.9rem}
+.photo{position:relative;justify-self:center;width:min(100%,340px)}
+.photo::before{content:"";position:absolute;inset:-14px -14px 14px 14px;border-radius:44% 56% 52% 48%/48% 44% 56% 52%;background:linear-gradient(135deg,var(--a),var(--b));opacity:.85}
+.frame{position:relative;aspect-ratio:4/5;border-radius:48% 52% 46% 54%/40% 42% 58% 60%;overflow:hidden;background:var(--surface);border:4px solid var(--surface);display:grid;place-items:center}
+.frame img{width:100%;height:100%;object-fit:cover;display:block}
+.ph{text-align:center;color:var(--muted);padding:20px}
+.ph svg{width:84px;height:84px;opacity:.55}
+.ph small{display:block;margin-top:6px}
+section.s{padding:64px 0}
+section.alt{background:var(--surface);border-block:1px solid var(--line)}
+h2.t{font-size:2rem;margin-bottom:8px}
+h2.t::after{content:"";display:block;width:56px;height:5px;border-radius:3px;background:linear-gradient(90deg,var(--a),var(--b));margin-top:10px}
+.sub{color:var(--muted);margin:0 0 28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(40,100,150,.18)}
+.card .top{height:8px;background:linear-gradient(90deg,var(--a),var(--b))}
+.card:nth-child(2n) .top{background:linear-gradient(90deg,var(--b),var(--c))}
+.card:nth-child(3n) .top{background:linear-gradient(90deg,var(--c),var(--a))}
+.card .in{padding:20px}
+.card h3{font-size:1.2rem;margin-bottom:4px}
+.meta{color:var(--muted);font-size:.92rem;margin:0 0 10px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.tags span{background:var(--tag);border-radius:999px;padding:2px 12px;font-size:.85rem}
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:40px}
+.bar{margin-bottom:14px}
+.bar div:first-child{display:flex;justify-content:space-between;font-weight:500;margin-bottom:5px}
+.bar .tr{height:9px;border-radius:5px;background:var(--tag);overflow:hidden}
+.bar .tr i{display:block;height:100%;border-radius:5px;background:linear-gradient(90deg,var(--a),var(--b))}
+.tl{border-left:3px solid var(--line);padding-left:26px;display:grid;gap:26px;margin-left:6px}
+.tl article{position:relative}
+.tl article::before{content:"";position:absolute;left:-36px;top:6px;width:15px;height:15px;border-radius:50%;background:var(--a);border:3px solid var(--bg)}
+.alt .tl article::before{border-color:var(--surface)}
+.tl h3{font-size:1.15rem}
+ul.pl{margin:8px 0 0;padding-left:20px}
+.ach{display:flex;gap:14px;align-items:flex-start}
+.ach .ic{flex:none;width:44px;height:44px;border-radius:12px;display:grid;place-items:center;font-size:1.4rem;background:var(--tag)}
+.cert{position:relative;aspect-ratio:4/3;background:var(--tag);display:grid;place-items:center;overflow:hidden;border-bottom:1px solid var(--line)}
+.cert img{width:100%;height:100%;object-fit:contain;background:#fff;display:block}
+.cert .ph{padding:12px}
+.cert .ph svg{width:56px;height:56px}
+.contact{display:flex;gap:12px;flex-wrap:wrap}
+.contact a{padding:12px 20px;border-radius:12px;background:var(--surface);border:1px solid var(--line);text-decoration:none;font-weight:600}
+.contact a:hover{border-color:var(--a)}
+footer{padding:28px 20px;text-align:center;color:var(--muted);font-size:.92rem}
+.theme{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:6;background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:8px 14px;font:inherit;cursor:pointer}
+.hero .wrap>*{animation:in .7s both}.hero .wrap>*:nth-child(2){animation-delay:.15s}
+@keyframes in{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+@media (max-width:760px){.hero .wrap,.about{grid-template-columns:1fr}.photo{order:-1;width:240px;margin-top:10px}}
+</style>
+</head>
+<body>
+<nav aria-label="Navigasi utama"><ul>
+<li><a href="#home">Beranda</a></li><li><a href="#tentang">Tentang</a></li><li><a href="#pendidikan">Pendidikan</a></li><li><a href="#pengalaman">Pengalaman</a></li><li><a href="#project">Proyek</a></li><li><a href="#sertifikasi">Sertifikat</a></li><li><a href="#kontak">Kontak</a></li>
+</ul></nav>
+
+<header class="hero" id="home"><div class="wrap">
+<div>
+<span class="hello">Perkenalkan, saya</span>
+<h1>Aqilla <em>Nur Aisyah Widodo</em></h1>
+<p class="lead">Mahasiswi D4 Teknik Informatika di Politeknik Negeri Jember PSDKU Nganjuk. Memiliki pengalaman di bidang kasir dan layanan keuangan, serta sedang mendalami pengembangan website.</p>
+<div class="btns"><a class="btn p" href="#project">Lihat Proyek</a><a class="btn" href="CV_Aqilla_Nur_Aisyah_Widodo.pdf" download>Unduh CV</a></div>
+<div class="stats"><div><b>3</b><span>Semester ditempuh</span></div><div><b>1</b><span>Proyek web</span></div><div><b>2</b><span>Sertifikat</span></div></div>
+</div>
+<div class="photo">
+<div class="frame" data-img="passfoto" data-alt="Foto profil Aqilla Nur Aisyah Widodo">
+<div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg><small>Foto profil</small></div>
+</div>
+</div>
+</div></header>
+
+<section class="s" id="tentang"><div class="wrap about">
+<div>
+<h2 class="t">Tentang Saya</h2>
+<p>Saya adalah mahasiswi semester 3 D4 Teknik Informatika di Politeknik Negeri Jember (PSDKU Nganjuk). Saya juga bekerja sebagai kasir toko dan layanan keuangan, sehingga terbiasa menangani transaksi harian dan melayani pelanggan.</p>
+<p>Di bidang teknologi, saya sedang mempelajari dasar pengembangan web (PHP dan Flutter), basis data MySQL, serta desain grafis menggunakan CorelDRAW. Tujuan saya adalah memadukan wawasan keuangan dengan keterampilan teknis, pengembangan web, dan administrasi modern.</p>
+<p class="meta">Berdomisili di Kertosono, Nganjuk, Jawa Timur</p>
+</div>
+<div>
+<h3 style="font-size:1.1rem;margin-bottom:8px">Teknis</h3>
+<div class="tags" style="margin:0 0 20px"><span>PHP (dasar)</span><span>Flutter (dasar)</span><span>MySQL (dasar)</span><span>CorelDRAW</span><span>Microsoft Office</span><span>Trello</span></div>
+<h3 style="font-size:1.1rem;margin-bottom:8px">Non-teknis</h3>
+<div class="tags" style="margin:0 0 20px"><span>Pengelolaan kas &amp; transaksi</span><span>Pelayanan pelanggan</span><span>Komunikasi</span><span>Administrasi &amp; pembukuan dasar</span></div>
+<h3 style="font-size:1.1rem;margin-bottom:8px">Bahasa</h3>
+<div class="tags" style="margin:0"><span>Indonesia (bahasa ibu)</span><span>Inggris (dasar, EPT)</span><span>Jerman (dasar)</span></div>
+</div></div></section>
+
+<section class="s alt" id="pendidikan"><div class="wrap">
+<h2 class="t">Pendidikan</h2><p class="sub">Riwayat pendidikan formal.</p>
+<div class="tl">
+<article><h3>D4 Teknik Informatika – Politeknik Negeri Jember (PSDKU Nganjuk)</h3><p class="meta">2025 – estimasi lulus Juni 2029 · Semester 3</p><p>Mendalami dasar rekayasa perangkat lunak, pemrograman web (PHP), dan manajemen basis data.</p></article>
+<article><h3>SMA Negeri 1 Kertosono</h3><p class="meta">2022 – 2025 · Nilai akhir 88,96</p><p>Mata pelajaran peminatan: Ekonomi, Bahasa Jerman, Geografi, Bahasa Inggris Tingkat Lanjut, dan Prakarya.</p></article>
+</div></div></section>
+
+<section class="s" id="pengalaman"><div class="wrap">
+<h2 class="t">Pengalaman</h2><p class="sub">Pengalaman kerja.</p>
+<div class="tl">
+<article><h3>Kasir Toko / Layanan Keuangan – Toko / BRILink</h3><p class="meta">Hingga saat ini</p><ul class="pl"><li>Menangani transaksi keuangan harian, baik tunai maupun non-tunai.</li><li>Melayani pelanggan secara ramah dan profesional untuk memastikan kepuasan layanan.</li><li>Merekap pembukuan harian secara akurat dan transparan.</li></ul></article>
+</div></div></section>
+
+<section class="s alt" id="project"><div class="wrap">
+<h2 class="t">Proyek</h2><p class="sub">Proyek yang pernah dikerjakan.</p>
+<div class="grid">
+<div class="card"><div class="top"></div><div class="in"><h3>Website E-Commerce UMKM Nettyzen Cafe</h3><p class="meta">Project Based Learning · Semester 1 · Web Developer</p><p>Merancang dan membangun website e-commerce untuk UMKM Nettyzen Cafe, meliputi katalog menu interaktif, sistem pemesanan daring, dan pengelolaan data transaksi guna mendukung digitalisasi usaha.</p><div class="tags"><span>PHP</span><span>MySQL</span></div></div></div>
+</div></div></section>
+
+<section class="s" id="sertifikasi"><div class="wrap">
+<h2 class="t">Sertifikat</h2><p class="sub">Sertifikat yang telah diperoleh.</p>
+<div class="grid">
+<div class="card"><div class="top"></div>
+<div class="cert" data-img="ept" data-alt="Sertifikat EPT (English Proficiency Test)"><div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M3 17l5-4 4 3 3-2 6 4"/></svg><small>Sertifikat EPT</small></div></div>
+<div class="in"><h3>Sertifikat EPT (English Proficiency Test)</h3><p class="meta" style="margin:0">Tes kemampuan Bahasa Inggris</p></div></div>
+<div class="card"><div class="top"></div>
+<div class="cert" data-img="terra" data-alt="Sertifikat Pelatihan Desain Grafis"><div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M3 17l5-4 4 3 3-2 6 4"/></svg><small>Sertifikat Desain Grafis</small></div></div>
+<div class="in"><h3>Sertifikat Pelatihan Desain Grafis</h3><p class="meta" style="margin:0">Pelatihan menggunakan CorelDRAW</p></div></div>
+</div></div></section>
+
+<section class="s alt" id="kontak"><div class="wrap">
+<h2 class="t">Kontak</h2><p class="sub">Silakan menghubungi saya untuk berdiskusi atau berkolaborasi.</p>
+<div class="contact"><a href="mailto:aqillaaisyah23@email.com">Email</a><a href="https://wa.me/6281228172937" rel="noopener">WhatsApp · 0812-2817-2937</a><a href="https://id.jobstreet.com/id/profiles/aqilla-aisyah-01r29vqytz" rel="noopener">JobStreet</a></div>
+</div></section>
+<footer>© 2026 Aqilla Nur Aisyah Widodo</footer>
+<button class="theme" id="t" type="button">Mode gelap</button>
+<script>
+var r=document.documentElement,b=document.getElementById('t');
+b.onclick=function(){var d=r.getAttribute('data-theme')==='dark'||(!r.getAttribute('data-theme')&&matchMedia('(prefers-color-scheme:dark)').matches);r.setAttribute('data-theme',d?'light':'dark');b.textContent=d?'Mode gelap':'Mode terang'};
+/* Memuat foto/sertifikat permanen dari folder yang sama dengan file ini.
+   Nama file: passfoto, ept, terra. Ekstensi dicari otomatis (jpg, jpeg, png, webp). */
+var EXT=['jpg','jpeg','png','webp','JPG','JPEG','PNG'];
+document.querySelectorAll('[data-img]').forEach(function(box){
+var name=box.getAttribute('data-img'),alt=box.getAttribute('data-alt'),n=0;
+(function next(){
+if(n>=EXT.length)return;
+var im=new Image();im.alt=alt;
+im.onload=function(){var ph=box.querySelector('.ph');if(ph)ph.remove();box.appendChild(im)};
+im.onerror=function(){n++;next()};
+im.src=name+'.'+EXT[n];
+})();
+});
+</script>
+</body>
+</html>
